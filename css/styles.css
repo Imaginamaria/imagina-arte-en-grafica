@@ -1,0 +1,57 @@
+/* fa-lightbulb animada */
+.animated-icon {
+  animation: switch-icon 2s infinite;
+}
+
+@keyframes switch-icon {
+  0%, 49% {
+    content: "\f0eb"; /* fa-lightbulb (unicode) */
+  }
+  50%, 100% {
+    content: "\f1fc"; /* fa-paintbrush (unicode) */
+  }
+}
+/* header */
+.header {
+  background: #151515 url("../img/mar-rojo-ola.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; /*para que quede fijo el fondo*/
+}
+
+.header::after { /*fantasma de fondo*/
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(223, 93, 93, 0.6);
+}
+
+.header .text-container {
+  z-index: 10; /*texto encima del overlay para que no se opaque*/
+}
+
+.header .roles {
+  font-family: "inter", sans-serif;
+}
+
+.header .social {
+  bottom: 50px;
+}
+
+.sobremi-img {
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  .header .social i { /*achicar los social iconnns para que no queden ta grandes enn pantallas chicas*/
+    font-size: 30px;
+  }
+  .header .roles {
+    font-size: 18px !important;
+  }
+  .sobremi-content {
+    flex-direction: column;
+  }
+}

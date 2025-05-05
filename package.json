@@ -1,0 +1,17 @@
+{
+  "name": "porfolio-imagina",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass --no-source-map scss:css",
+    "sass:watch": "sass --no-source-map --watch scss:css"
+  },
+  "author": "Maria Etchegaray - 91061",
+  "license": "ISC",
+  "description": "Porfolio Imagina arte en grafica",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "bootstrap": "^5.3.5",
+    "sass": "^1.87.0"
+  }
+}
