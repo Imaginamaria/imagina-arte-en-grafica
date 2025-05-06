@@ -44,6 +44,12 @@
   width: 200px;
 }
 
+.proyecto:hover {
+  transform: scale(1.05); /*para cuanndo haces hover con el cursor se agrande la imagen*/
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+}
+
 @media (max-width: 767px) {
   .header .social i { /*achicar los social iconnns para que no queden ta grandes enn pantallas chicas*/
     font-size: 30px;
