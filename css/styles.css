@@ -101,4 +101,7 @@
   .sobremi-content {
     flex-direction: column;
   }
+  .barquito {
+    width: 100px;
+  }
 }
