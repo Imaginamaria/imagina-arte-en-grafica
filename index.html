@@ -13,10 +13,9 @@
     <title>Imagina Arte en grafica</title>
 </head>
 <body>
-    <header class="header vh-100 text-center position-relative">
-        <div
-          class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
-        >
+    <header class="header vh-100 text-center position-relative overflow-hidden">
+      <img src="img/barquito-rojo.png" alt="Barquito" class="barquito" />
+        <div class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100">
           <h5 class="text-secondary fs-3 fw-bold text-uppercase"><span><i id="icon" class="fas fa-lightbulb fade-icon fa-2x"></i></span></h5>
           
           <h1 id="typing-text" class="display-1 fw-bold text-white"></h1>
@@ -337,6 +336,13 @@
               <hr class="w-25 mx-auto" />
               <p class="fs-6">Asesoramiento e integración de herramientas para la gestión de relaciones con clientes.</p>
             </div>
+
+            <div class="col-md-4 text-center mb-4">
+              <i class="fas fa-bullhorn fa-3x text-primary mb-3"></i>
+              <h3 class="fs-4">Publicidad & SEO</h3>
+              <hr class="w-25 mx-auto" />
+              <p class="fs-6">Diseño de campañas digitales y optimización SEO para mejorar visibilidad y posicionamiento en buscadores.</p>
+            </div>
       
       
             <div class="col-md-4 text-center mb-4">
@@ -358,10 +364,9 @@
         </div>
       </section>
       
-      <section id="diseno" class="bg-light py-5">
+      <section id="diseno" class="diseno bg-light py-5">
         <div class="container">
           <div class="text-center mb-5">
-            <h4 class="text-uppercase fw-bold text-primary">Servicios</h4>
             <hr class="w-25 mx-auto" />
             <h2 class="mb-4">Diseño Gráfico & Comunicación Visual</h2>
             <p class="lead">
@@ -406,6 +411,63 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Contacto -->
+
+      <section class="contacto text-bg-dark bg-primary py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 offset-md-2">
+              <div class="text-center mb-5">
+                <h2 class="text-uppercase fw-bold text-dark">Contacto</h2>
+                <hr class="w-25 mx-auto" />
+                <h2 class="lead text-white">
+                  ¿Tenés un nuevo proyecto en mente? Me encantaría trabajar con vos.
+                </h2>
+
+                <p class="lead">
+                  Si tenés alguna consulta escribime a través del siguiente formulario.
+                </p>
+              </div>
+
+             <!-- Form -->
+            <form name="contact" netlify>
+              <div class="mb-5">
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="nombre"
+                  placeholder="Nombre"
+                />
+              </div>
+              <div class="mb-5">
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-5">
+                <textarea
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="mensaje"
+                  placeholder="Mensaje"
+                ></textarea>
+              </div>
+              <div class="mb-5 d-grid">
+                
+                <button type="submit" class="btn btn-outline-light btn-lg mt-3">Enviar</button>
+              </div>
+            </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
       
 

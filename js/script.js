@@ -37,4 +37,18 @@ function typeText(text, typingElement, delay) {
 // Ejecutar la animación al cargar la página
 document.addEventListener('DOMContentLoaded', runTypingEffect);
 
+//barquito
+
+const barquito = document.querySelector('.barquito');
+
+document.addEventListener('mousemove', (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+
+  // Opcional: mover más suavemente y con leve inclinación
+  const angle = (x / window.innerWidth - 0.5) * 10;
+
+  barquito.style.transform = `translate(${x}px, ${y * 0.8}px) rotate(${angle}deg)`;
+});
+
 
