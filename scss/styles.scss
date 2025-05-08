@@ -95,6 +95,53 @@
       transform: translateX(0) rotate(0deg);
     }
   }
+
+  .barcos-loop {
+    position: absolute;
+    bottom: 20%;
+    left: -200vw; /* Ahora empieza bien fuera de pantalla */
+    width: 400vw; /* largo suficiente para animación fluida */
+    display: flex;
+    gap: 100px;
+    animation: navegar-barcos 60s linear infinite;
+    z-index: 5;
+    pointer-events: none;
+  }
+  
+  .barco {
+    width: 160px;
+    height: auto;
+    animation: opacidad-barco 6s ease-in-out infinite;
+  }
+  
+  /* Movimiento lateral */
+  @keyframes navegar-barcos {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200vw);
+    }
+  }
+  
+  /* Flotar y opacidad */
+  @keyframes opacidad-barco {
+    0%, 100% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    25%, 75% {
+      opacity: 0.7;
+      transform: translateY(-5px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
   
 
   @media (max-width: 767px) {
