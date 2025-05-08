@@ -53,6 +53,12 @@
     opacity: 0.8;
   }
 
+  .servicios {
+    background: url('../img/mar-azul-ola.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
   @media (max-width: 767px) {
 
     .header .social i { /*achicar los social iconnns para que no queden ta grandes enn pantallas chicas*/
