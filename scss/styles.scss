@@ -83,6 +83,18 @@
     top: 0;
     left: 0;
   }
+
+  input,
+  textarea {
+   color: white !important;
+   font-weight: bold !important;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: white !important;
+    opacity: 1; /* para que no sea translúcido en algunos navegadores */
+  }
   
   @keyframes navegar {
     0% {
@@ -99,8 +111,8 @@
   .barcos-loop {
     position: absolute;
     bottom: 20%;
-    left: -200vw; /* Ahora empieza bien fuera de pantalla */
-    width: 400vw; /* largo suficiente para animación fluida */
+    left: -200vw; /* empieza bien fuera de pantalla */
+    width: 400vw;
     display: flex;
     gap: 100px;
     animation: navegar-barcos 60s linear infinite;
