@@ -245,4 +245,7 @@ textarea::placeholder {
   .overlay p {
     font-size: smaller;
   }
+  .modal h2 {
+    font-size: 1.5rem;
+  }
 }
